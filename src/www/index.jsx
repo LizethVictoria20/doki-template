@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Header from '../components/Header'
 
 const Container = () => {
   return (
-    <h1>Holis</h1>
+    <Header />
   )
 }
 
