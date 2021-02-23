@@ -10,8 +10,13 @@ const Card = () => {
       .then(response => response.json())
       .then(data => {
         console.log(data)
-
-        setTemplates(data)
+        const templateArray = []
+        for (const prop in data) {
+          const item = data[prop]
+          item.id = prop
+          templateArray.push(item)
+        }
+        setTemplates(templateArray)
       })
   }, [])
 
@@ -20,8 +25,8 @@ const Card = () => {
       <h1>Temp</h1>
       <ul>
         {
-          Object.keys(template).map((id) =>
-            <li key={id}>{template[id].description}</li>
+          template.map((item) =>
+            <li key={item.id}>{item.description}</li>
           )
         }
       </ul>
