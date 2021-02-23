@@ -8,7 +8,11 @@ const Card = () => {
   useEffect(() => {
     fetch('https://doki-templates-default-rtdb.firebaseio.com/templates.json')
       .then(response => response.json())
-      .then(data => setTemplates(data))
+      .then(data => {
+        console.log(data)
+
+        setTemplates(data)
+      })
   }, [])
 
   return (
@@ -16,16 +20,14 @@ const Card = () => {
       <h1>Temp</h1>
       <ul>
         {
-          template.map(item => (
-            <li>{item.description}</li>
-          ))
+          Object.keys(template).map((id) =>
+            <li key={id}>{template[id].description}</li>
+          )
         }
       </ul>
     </div>
   )
 }
-
-
 
 
 
