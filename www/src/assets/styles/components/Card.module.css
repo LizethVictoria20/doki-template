@@ -1,7 +1,0 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
-
-.containerCard {
-  @appy container-card grid grid-flow-col grid-cols-3 w-2/4;
-}

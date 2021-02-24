@@ -4,7 +4,6 @@
 
 body {
   background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
-  height: 100vh;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
@@ -27,9 +26,9 @@ li a {
 
 }
 
-h1 {
+.title {
   color: white;
-  text-align: center;
   margin-top: 8rem;
+  text-align: center;
   font-size: 40px;
 }

@@ -14,7 +14,7 @@ const Header = () => {
           <li><a href="">Login</a></li>
         </ul>
       </nav>
-      <h1>Doki Template</h1>
+      <h1 className={styles.title}>Doki Template</h1>
     </div>
 
   )
