@@ -27,7 +27,7 @@ const Card = () => {
             <div className="h-60 shadow-2xl bg-indigo-200 rounded mx-4 m-20 p-6 relative">
               <h1>{item.name}</h1>
               <p>{item.description}</p>
-              <img src="" alt="" />
+              <img src={item.imagen} alt="" />
               <p className="absolute inset-x-0 bottom-0 mb-4">{item.owner}</p>
               <div id={`miModal-${item.id}`} className="modal bg-red-400  top-0 right-0 bottom-0 left-0">
 
@@ -35,7 +35,8 @@ const Card = () => {
                   <a href="#">X</a>
                   <h1>{item.name}</h1>
                   <p>Download</p>
-                  <p className="bg-gray-200">npx create-snowpack-app page-example --template @snowpack/template-login</p>
+                  <p className="command bg-gray-200">npx create-snowpack-app page-example --template @snowpack/template-login</p>
+                  <button class="button">Copy</button>
                 </div>
               </div>
             </div>
