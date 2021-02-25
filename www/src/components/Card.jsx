@@ -1,33 +1,44 @@
 import React, { useState, useEffect } from 'react';
+import { app } from '../config/base';
+
+const db = app.firestore()
 import '../../public/index.css';
 
 const Card = () => {
-  const [template, setTemplates] = React.useState([])
+  const [templates, setTemplates] = useState([])
 
   useEffect(() => {
-    fetch('https://doki-templates-default-rtdb.firebaseio.com/templates.json')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        const templateArray = []
-        for (const prop in data) {
-          const item = data[prop]
-          item.id = prop
-          templateArray.push(item)
-        }
-        setTemplates(templateArray)
-      })
+
+    const fetchTemplates = async () => {
+      const templatescol = await db.collection('templates').get()
+      setTemplates(templatescol.docs.map(document => {
+          return document.data()
+      }))
+    }
+    fetchTemplates();
+    // fetch('https://doki-templates-default-rtdb.firebaseio.com/templates.json')
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     console.log(data)
+    //     const templateArray = []
+    //     for (const prop in data) {
+    //       const item = data[prop]
+    //       item.id = prop
+    //       templateArray.push(item)
+    //     }
+    //     setTemplates(templateArray)
+    //   })
   }, [])
 
   return (
     <div className="container-cards grid grid-cols-3 text-center m-32" >
       {
-        template.map((item) =>
+        templates.map((item) =>
           <a href={`#miModal-${item.id}`} key={item.id}>
             <div className="h-60 shadow-2xl bg-indigo-200 rounded mx-4 m-20 p-6 relative">
               <h1>{item.name}</h1>
               <p>{item.description}</p>
-              <img src="" alt="" />
+              <img src={item.img} alt={item.name} />
               <p className="absolute inset-x-0 bottom-0 mb-4">{item.owner}</p>
               <div id={`miModal-${item.id}`} className="modal bg-red-400  top-0 right-0 bottom-0 left-0">
 
