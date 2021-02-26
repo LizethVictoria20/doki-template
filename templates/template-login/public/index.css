@@ -20,3 +20,7 @@ input {
 .bgCard {
   background-image: linear-gradient(to right top, #8654e1, #8d56e7, #9457ec, #9c59f2, #a35af7);
 }
+
+.form {
+  margin: 0 auto;
+}

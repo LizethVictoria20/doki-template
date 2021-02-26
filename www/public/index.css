@@ -1,6 +1,7 @@
 /* Add CSS styles here! */
 body {
   font-family: sans-serif;
+  height: 100vh;
 }
 
 /*  MODAAAAL */
@@ -29,4 +30,23 @@ body {
 [id|="miModal"]:target{
   opacity:1;
   pointer-events: auto;
+}
+
+.text-form {
+  font-size: x-large;
+}
+
+.form {
+  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
+  margin: 0 auto;
+}
+
+.form input {
+  border-radius: .5rem;
+  padding-left: 1.5rem;
+  height: 45px;
+}
+
+.button-form {
+  margin: 0 auto;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../assets/styles/components/Header.module.css'
+import { Link } from "react-router-dom";
 
 
 
@@ -8,13 +9,12 @@ const Header = () => {
     <div>
       <nav className={styles.navbar}>
         <ul>
-          <li><a href="">Document</a></li>
-          <li><a href="">Tutorial</a></li>
-          <li><a href="">Versions</a></li>
-          <li><a href="">Login</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/documentation">Documentation</Link></li>
+          <li><Link to="/tutorial">Tutorial</Link></li>
+          <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
-      <h1 className={styles.title}>Doki Template</h1>
     </div>
 
   )

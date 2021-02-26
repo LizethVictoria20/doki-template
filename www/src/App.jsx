@@ -1,16 +1,20 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from '../src/components/Header'
 import Card from '../src/components/Card'
-import { StorageFirebase } from './components/StorageFirebase'
+import StorageFirebase from '../src/components/StorageFirebase'
+
 
 function App() {
   // Return the App component.
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <Card />
-      <StorageFirebase />
-    </div>
+      <Switch className="App">
+        <Route exact path="/" component={Card} />
+        <Route path="/login" component={StorageFirebase} />
+      </Switch>
+    </Router>
   );
 }
 
