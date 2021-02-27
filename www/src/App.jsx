@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import Header from "../src/components/Header";
 import Card from "../src/components/Card";
 import Login from "./components/Login";
@@ -9,7 +9,7 @@ import Documentation from "../src/components/Documentation";
 function App() {
   // Return the App component.
   return (
-    <HashRouter basename="/">
+    <BrowserRouter>
       <Header />
       <div className="App">
         <Switch>
@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/" component={Card} />
         </Switch>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
