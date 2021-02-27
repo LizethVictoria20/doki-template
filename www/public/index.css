@@ -27,6 +27,10 @@ body {
   z-index: 99;
 }
 
+.nameTemplate {
+  font-size: 30px;
+}
+
 [id|="miModal"]:target{
   opacity:1;
   pointer-events: auto;

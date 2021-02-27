@@ -1,11 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { app } from '../config/base';
+
 
 const db = app.firestore()
 import '../../public/index.css';
 
 const Card = () => {
   const [templates, setTemplates] = useState([])
+  const [copySuccess, setCopySuccess] = useState('');
+  const textInput = useRef(null);
+
+  function copyToClipboard(e) {
+    textInput.current.select();
+    document.execCommand('copy');
+    // This is just personal preference.
+    // I prefer to not show the the whole text area selected.
+    e.target.focus();
+    setCopySuccess('Copied!');
+  };
 
   useEffect(() => {
 
@@ -30,6 +42,8 @@ const Card = () => {
     //   })
   }, [])
 
+
+
   return (
     <div className="container-cards grid grid-cols-3 text-center m-32" >
       {
@@ -42,12 +56,15 @@ const Card = () => {
               <p className="absolute inset-x-0 bottom-0 mb-4">{item.owner}</p>
               <div id={`miModal-${item.id}`} className="modal bg-red-400  top-0 right-0 bottom-0 left-0">
 
-                <div className="modal-contenido bg-indigo-300 w-48 p-4 m-4 relative">
-                  <a href="#">X</a>
-                  <h1>{item.name}</h1>
-                  <p>Download</p>
-                  <p className="command bg-gray-200">npx create-snowpack-app page-example --template @snowpack/template-login</p>
-                  <button class="button">Copy</button>
+                <div className="modal-contenido bg-indigo-200 w-48 p-4 m-4 relative">
+                  <a href="#" className="float-right">X</a>
+                  <h1 className="nameTemplate pb-4">{item.name}</h1>
+                  <p>If you want to download this template copy and paste the command in your terminal.</p>
+                  <textarea className="command bg-gray-50 mt-11 w-11/12 p-2 text-center h-12 rounded-md" ref={textInput} type="text">npx create-snowpack-app page-example --template @snowpack/template-login</textarea> <br />
+                  <button class="buttonCopy bg-indigo-300 w-1/6 h-9 mt-8 rounded-md" onClick={copyToClipboard}>
+                    Copy
+                  </button>
+                  {copySuccess}
                 </div>
               </div>
             </div>
@@ -55,7 +72,6 @@ const Card = () => {
         )
       }
     </div>
-
   )
 }
 
