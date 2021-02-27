@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from '../src/components/Header'
 import Card from '../src/components/Card'
 import StorageFirebase from '../src/components/StorageFirebase'
+import Documentation from '../src/components/Documentation'
 
 
 function App() {
@@ -10,10 +11,11 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch className="App">
+      <div className="App">
         <Route exact path="/" component={Card} />
         <Route path="/login" component={StorageFirebase} />
-      </Switch>
+        <Route path="/documentation" component={Documentation} />
+      </div>
     </Router>
   );
 }
