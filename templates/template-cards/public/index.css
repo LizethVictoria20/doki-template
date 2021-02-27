@@ -3,10 +3,15 @@
 @import 'tailwindcss/dist/utilities.css';
 
 body {
-  background-color: rgb(221, 216, 230);
-  margin: 10%;
+  background-color: #f8f9fd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5%;
 }
 
 h1 {
   font-size: 40px;
+}
+
+.fruitContainer img {
+  margin: 0 auto;
 }

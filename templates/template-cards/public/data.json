@@ -2,23 +2,27 @@
   "fruits": [
     {
       "name": "Watermelon",
-      "img": "/watermelon.png"
+      "img": "./img/watermelon.png"
     },
     {
       "name": "Sweet Banana",
-      "img": "/sweet-banana.png "
+      "img": "./img/sweet-banana.png "
     },
     {
       "name": "Raspberry",
-      "img": "/raspberry.png"
+      "img": "./img/raspberry.png"
     },
     {
       "name": "Citrus",
-      "img": "/citrus.png"
+      "img": "./img/citrus.png"
     },
     {
       "name": "Kiwi",
-      "img": "/kiwi.png"
+      "img": "./img/kiwi.png"
+    },
+    {
+      "name": "Grape",
+      "img": "./img/grape.png"
     }
   ]
 }
