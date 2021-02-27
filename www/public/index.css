@@ -1,6 +1,7 @@
 /* Add CSS styles here! */
 body {
-  font-family: sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  height: 100vh;
 }
 
 /*  MODAAAAL */
@@ -26,7 +27,51 @@ body {
   z-index: 99;
 }
 
+.nameTemplate {
+  font-size: 30px;
+}
+
 [id|="miModal"]:target{
   opacity:1;
   pointer-events: auto;
+}
+
+.text-form {
+  font-size: x-large;
+}
+
+.form {
+  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
+  margin: 0 auto;
+}
+
+.form input {
+  border-radius: .5rem;
+  padding-left: 1.5rem;
+  height: 45px;
+}
+
+.button-form {
+  margin: 0 auto;
+}
+
+.documentation {
+  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
+  margin: 0 auto;
+  margin-top: 8%;
+  padding: 5%;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.documentation h1 {
+  font-size: 35px;
+}
+
+.documentation h2 {
+  font-size: 20px;
+}
+
+.documentation p {
+  font-size: 16px;
 }
