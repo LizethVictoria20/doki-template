@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import { app } from '../config/base';
+import StorageFirebase from './StorageFirebase'
 
 
 const db = app.firestore()

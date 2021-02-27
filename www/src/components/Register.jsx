@@ -22,16 +22,16 @@ const Register = () => {
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),
   });
-  
+
   const saveUser = (data) => {
     // data => user form data 
     // write the code here :D 
   }
 
   return (
-    <div className="registerInput">
-      <h1>Register</h1>
-      <form onSubmit={handleSubmit(saveUser)}>
+    <div className="registerInput" className="m-32">
+      <h1 className="text-form text-center text-indigo-100 pb-8">Create your account</h1>
+      <form onSubmit={handleSubmit(saveUser)} className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-96 text-center">
         <input name="name" placeholder="Name" type="text" ref={register} />
         <input
           name="lastName"
@@ -52,9 +52,8 @@ const Register = () => {
           type="password"
           ref={register}
         />
-        <input
-          type="submit"
-        />
+        <button className="button-form bg-indigo-100 w-40 rounded mt-8 h-8">Create account</button>
+
       </form>
     </div>
   );

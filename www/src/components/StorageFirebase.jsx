@@ -46,7 +46,7 @@ const StorageFirebase = () => {
                 <input type="text" name="owner" placeholder="owner" />
                 <input type="text" name="id" placeholder="id" />
                 <input type="file" className="rounded" onChange={onFileChange} />
-                <button className="button-form bg-indigo-100 w-24 rounded">Submit</button>
+                <button className="button-form bg-indigo-100 w-24 rounded mt-8 h-8">Submit</button>
             </form>
         </div>
     )
