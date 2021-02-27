@@ -1,22 +1,25 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from '../src/components/Header'
-import Card from '../src/components/Card'
-import StorageFirebase from '../src/components/StorageFirebase'
-import Documentation from '../src/components/Documentation'
-
+import React from "react";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
+import Header from "../src/components/Header";
+import Card from "../src/components/Card";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Documentation from "../src/components/Documentation";
 
 function App() {
   // Return the App component.
   return (
-    <Router>
+    <BrowserRouter>
       <Header />
       <div className="App">
-        <Route exact path="/" component={Card} />
-        <Route path="/login" component={StorageFirebase} />
-        <Route path="/documentation" component={Documentation} />
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/documentation" component={Documentation} />
+          <Route path="/register" exact component={Register}/>
+          <Route exact path="/" component={Card} />
+        </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
