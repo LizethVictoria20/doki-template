@@ -1,0 +1,28 @@
+{
+  "fruits": [
+    {
+      "name": "Watermelon",
+      "img": "./img/watermelon.png"
+    },
+    {
+      "name": "Sweet Banana",
+      "img": "./img/sweet-banana.png "
+    },
+    {
+      "name": "Raspberry",
+      "img": "./img/raspberry.png"
+    },
+    {
+      "name": "Citrus",
+      "img": "./img/citrus.png"
+    },
+    {
+      "name": "Kiwi",
+      "img": "./img/kiwi.png"
+    },
+    {
+      "name": "Grape",
+      "img": "./img/grape.png"
+    }
+  ]
+}

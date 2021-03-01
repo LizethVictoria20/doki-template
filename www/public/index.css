@@ -1,4 +1,128 @@
 /* Add CSS styles here! */
 body {
-  font-family: sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+/* CARD */
+
+.card{
+  height: 350px;
+  max-width: 350px;
+  background: #c7d2fd;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card:hover{
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .top-text{
+  padding: 5px;
+}
+.card .top-text .name{
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+.card .top-text p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: #c7d2fd;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+/*  MODAAAAL */
+
+.modal-contenido{
+  background-color: #c7d2fd;
+  width:50%;
+  height: 50%;
+  padding: 10px 20px;
+  margin: 15% auto;
+  position: relative;
+}
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.nameTemplate {
+  font-size: 30px;
+}
+
+[id|="miModal"]:target{
+  opacity:1;
+  pointer-events: auto;
+}
+
+.text-form {
+  font-size: x-large;
+}
+
+.form {
+  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
+  margin: 0 auto;
+}
+
+.form input {
+  border-radius: .5rem;
+  padding-left: 1.5rem;
+  height: 45px;
+}
+
+.button-form {
+  margin: 0 auto;
+}
+
+.documentation {
+  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
+  margin: 0 auto;
+  margin-top: 8%;
+  padding: 5%;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.documentation h1 {
+  font-size: 35px;
+}
+
+.documentation h2 {
+  font-size: 20px;
+}
+
+.documentation p {
+  font-size: 16px;
 }
