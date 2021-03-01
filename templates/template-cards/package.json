@@ -1,5 +1,5 @@
 {
-  "name": "template-cards",
+  "name": "@doki-template/template-cards",
   "version": "0.1.0",
   "scripts": {
     "start": "snowpack dev",
