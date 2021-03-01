@@ -52,7 +52,7 @@ const Card = () => {
         templates.map((item) =>
           <a href={`#miModal-${item.id}`} key={item.id}>
             <div className="card h-3/4 shadow-2xl bg-indigo-200 rounded mx-4 m-20 relative">
-              <img src={item.img} alt="" />
+              <img src={item.img} alt="" className="imgTemplate" />
               <h1 className="mt-8">{item.name}</h1>
               <p className="absolute inset-x-0 mb-4">{item.owner}</p>
               <div className="bottom-text">
@@ -68,7 +68,7 @@ const Card = () => {
                   <a href="#" className="float-right">X</a>
                   <h1 className="nameTemplate pb-4">{item.name}</h1>
                   <p>If you want to download this template copy and paste the command in your terminal.</p>
-                  <textarea className="command bg-gray-50 mt-11 w-11/12 p-2 text-center h-12 rounded-md" ref={textInput} type="text">npx create-snowpack-app page-example --template @snowpack/template-login</textarea> <br />
+                  <textarea className="command bg-gray-50 mt-11 w-11/12 p-2 text-center h-12 rounded-md" ref={textInput} type="text">{`npx create-snowpack-app page-example --template @snowpack/${item.packageName}`}</textarea> <br />
                   <button class="buttonCopy bg-indigo-300 w-1/6 h-9 mt-8 rounded-md" onClick={copyToClipboard}>
                     Copy
                   </button>
