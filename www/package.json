@@ -1,6 +1,6 @@
 {
   "name": "@doki-template/www",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -14,12 +14,12 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
+    "@hookform/resolvers": "1.0.0",
     "firebase": "^8.2.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "@hookform/resolvers": "1.0.0",
     "react-hook-form": "^6.15.4",
+    "react-router-dom": "^5.2.0",
     "yup": "^0.32.9"
   }
 }
