@@ -17,6 +17,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/documentation" component={Documentation} />
           <Route path="/register" exact component={Register} />
+          <Route path="/new-template" exact component={StorageFirebase} />
           <Route exact path="/" component={Card} />
         </Switch>
       </div>
