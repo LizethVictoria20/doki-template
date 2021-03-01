@@ -14,5 +14,8 @@
   },
   "keywords": [
     "csa-template"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
