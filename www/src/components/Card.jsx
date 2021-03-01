@@ -51,11 +51,17 @@ const Card = () => {
       {
         templates.map((item) =>
           <a href={`#miModal-${item.id}`} key={item.id}>
-            <div className="h-60 shadow-2xl bg-indigo-200 rounded mx-4 m-20 p-6 relative">
-              <h1>{item.name}</h1>
-              <p>{item.description}</p>
+            <div className="card h-3/4 shadow-2xl bg-indigo-200 rounded mx-4 m-20 relative">
               <img src={item.img} alt="" />
-              <p className="absolute inset-x-0 bottom-0 mb-4">{item.owner}</p>
+              <h1 className="mt-8">{item.name}</h1>
+              <p className="absolute inset-x-0 mb-4">{item.owner}</p>
+              <div className="bottom-text">
+                <p className="mt-16">{item.description}</p>
+                <div class="btn">
+                  <button class="buttonDownload bg-indigo-300 w-2/5 h-9 mt-8 rounded-md">Download</button>
+                </div>
+              </div>
+
               <div id={`miModal-${item.id}`} className="modal bg-red-400  top-0 right-0 bottom-0 left-0">
 
                 <div className="modal-contenido bg-indigo-200 w-48 p-4 m-4 relative">
