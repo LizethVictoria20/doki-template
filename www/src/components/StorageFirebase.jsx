@@ -21,7 +21,8 @@ const StorageFirebase = () => {
         const description = e.target.description.value;
         const owner = e.target.owner.value;
         const id = e.target.id.value;
-        if (!name || !description || !owner || !id) {
+        const packageName = e.target.packageName.value;
+        if (!name || !description || !owner || !id || !packageName) {
             return
         }
         db.collection("templates").doc(id).set({
@@ -29,7 +30,8 @@ const StorageFirebase = () => {
             img: fileUrl,
             description,
             owner,
-            id
+            id,
+            packageName
         }).then(() => {
             console.log("añadido")
         }).catch((err) => {
@@ -45,6 +47,7 @@ const StorageFirebase = () => {
                 <input type="text" name="description" placeholder="Description" />
                 <input type="text" name="owner" placeholder="owner" />
                 <input type="text" name="id" placeholder="id" />
+                <input type="text" name="packageName" placeholder="packageName" />
                 <input type="file" className="rounded" onChange={onFileChange} />
                 <button className="button-form bg-indigo-100 w-24 rounded mt-8 h-8">Submit</button>
             </form>
