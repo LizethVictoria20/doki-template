@@ -5,6 +5,7 @@ import Card from "../src/components/Card";
 import Login from "../src/components/Login";
 import Register from "../src/components/Register";
 import Documentation from "../src/components/Documentation";
+import StorageFirebase from "../src/components/StorageFirebase";
 
 function App() {
   // Return the App component.

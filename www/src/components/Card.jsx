@@ -54,7 +54,7 @@ const Card = () => {
             <div className="h-60 shadow-2xl bg-indigo-200 rounded mx-4 m-20 p-6 relative">
               <h1>{item.name}</h1>
               <p>{item.description}</p>
-              <img src={item.imagen} alt="" />
+              <img src={item.img} alt="" />
               <p className="absolute inset-x-0 bottom-0 mb-4">{item.owner}</p>
               <div id={`miModal-${item.id}`} className="modal bg-red-400  top-0 right-0 bottom-0 left-0">
 

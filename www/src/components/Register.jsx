@@ -39,16 +39,16 @@ const Register = () => {
           type="text"
           ref={register}
         />
-        <input name="email" placeholder="email" type="email" ref={register} />
+        <input name="email" placeholder="Email" type="email" ref={register} />
         <input
           name="password"
-          placeholder="password"
+          placeholder="Password"
           type="password"
           ref={register}
         />
         <input
           name="passwordConfirmation"
-          placeholder="Coinfirm password"
+          placeholder="Confirm password"
           type="password"
           ref={register}
         />
