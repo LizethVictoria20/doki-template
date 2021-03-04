@@ -1,6 +1,6 @@
 {
   "name": "@doki-template/template-login",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -14,5 +14,11 @@
   },
   "keywords": [
     "csa-template"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.0.3"
+  }
 }
