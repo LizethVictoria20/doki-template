@@ -34,7 +34,7 @@ simply execute `yarn start` and give it a few seconds to get started. Once it's 
 When you are finished simply go back to your terminal and hit ctrl + c to quit the program.
 
 ## Architecture
-[![](https://github.com/LizethVictoria20/doki-template/blob/dev-liz/www/public/Architecture.png?raw=true)](http:/https://github.com/LizethVictoria20/doki-template/blob/dev-liz/www/public/Architecture.png?raw=true/)
+[![](https://github.com/LizethVictoria20/doki-template/blob/dev-liz/www/public/infrastructure.png?raw=true)](http:/https://github.com/LizethVictoria20/doki-template/blob/dev-liz/www/public/Architecture.png?raw=true/)
 ## Snowpack
 [Snowpack](https://www.snowpack.dev "Snowpack") is a lightning-fast frontend build tool, designed for the modern web. It is an alternative to heavier, more complex bundlers like webpack or Parcel in your development workflow. Snowpack leverages JavaScript's native module system (known as ESM) to avoid unnecessary work and stay fast no matter how big your project grows.
 
