@@ -33,7 +33,8 @@ Once this is all done you're ready to run your template.
 simply execute `yarn start` and give it a few seconds to get started. Once it's up, you can open your web browser and enter localhost:8080. This will allow you to try out your template!
 When you are finished simply go back to your terminal and hit ctrl + c to quit the program.
 
-
+## Architecture
+[![Architecture](gs:./Architecture.png "Architecture")](gs:./Architecture.png "Architecture")
 ## Snowpack
 [Snowpack](https://www.snowpack.dev "Snowpack") is a lightning-fast frontend build tool, designed for the modern web. It is an alternative to heavier, more complex bundlers like webpack or Parcel in your development workflow. Snowpack leverages JavaScript's native module system (known as ESM) to avoid unnecessary work and stay fast no matter how big your project grows.
 
