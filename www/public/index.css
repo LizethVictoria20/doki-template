@@ -16,6 +16,12 @@ body {
   height: 470px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
+
+.imgTemplate {
+  height: 223px;
+  object-fit: revert;
+}
+
 .card .img{
   height: 200px;
   width: 100%;
@@ -23,7 +29,6 @@ body {
 .card .img img{
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 .card .top-text{
