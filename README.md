@@ -2,7 +2,7 @@
 
 ## Introduction
 ### The project
-when a developer starts an application they want it to look good, but it takes some time to do this. we created doki template, we want to save time for developers avoiding concentrating on styles so that it focuses only on functionality, that is the goal of doki
+When a developer starts an application they want it to look good, but it takes some time to do this. We created Doki Template, we want to save time for developers avoiding concentrating on styles so that it focuses only on functionality, that is the goal of doki.
 
 Other features: people who wish to upload their template can do so by simply registering on our page.
 
@@ -26,8 +26,11 @@ AGREGAR IMAGENES
 ## Run a template
 Installing the templates that you want to view is pretty simple!
 
-We created a command that you could found in the information of each template. Run that command on your terminal and that will look like
-`npx create-snowpack-app page-example --template @snowpack/$name-template`
+We created a command that you could found in the information of each template. Run that command on your terminal and that will look like:
+
+```
+npx create-snowpack-app page-example --template @snowpack/$name-template
+```
 
 Once this is all done you're ready to run your template.
 simply execute `yarn start` and give it a few seconds to get started. Once it's up, you can open your web browser and enter localhost:8080. This will allow you to try out your template!
@@ -50,4 +53,4 @@ We installed  Lerna to splitting up large codebases into separate independently 
 We are using npm as organization download the templates and that way the users could get only the template necessary. That is possible thankful to Lerna and Git.
 
 ## License
-MIT License
+[MIT License](./LICENSE)
