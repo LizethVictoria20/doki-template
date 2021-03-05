@@ -38,10 +38,7 @@ const Register = () => {
         Create your account
       </h2>
       <form
-        onSubmit={() => {
-          handleSubmit(saveUser);
-          reset();
-        }}
+        onSubmit={handleSubmit(saveUser)}
         className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-96 text-center"
       >
         <div
