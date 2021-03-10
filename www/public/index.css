@@ -1,7 +1,18 @@
 /* Add CSS styles here! */
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-image: url('./19197357-ai.png');
+}
+.page--home {
+  background-image: url('./376281-PBR83T-629-ai.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page--templates {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 /* CARD */
 
@@ -130,4 +141,29 @@ body {
 
 .documentation p {
   font-size: 16px;
+}
+
+/* HOMEEE */
+.containerHome {
+  text-indent: 14rem;
+  top: 12rem;
+  position: relative;
+  color: #1c4781;
+}
+
+.containerHome h1 {
+  font-size: 45px;
+}
+
+.containerHome p {
+margin-bottom: 2rem;
+}
+
+.containerHome a {
+  background-color: #1c4781;
+  color: white;
+  margin-left: 14rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+
 }
