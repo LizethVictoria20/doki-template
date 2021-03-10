@@ -3,7 +3,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 .page--home {
-  background-image: url('./376281-PBR83T-629-ai.png');
+  background-image: url('./imgHome.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,7 +12,29 @@ body {
   background-image: url('./pages.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.page--documentation {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page--tutorial {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page--login {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.page--new-template {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 /* CARD */
 
