@@ -4,7 +4,7 @@ import styles from '../assets/styles/components/Documentation.module.css'
 
 const Documentation = () => {
   return (
-    <div className="documentation shadow-2xl w-3/5 text-white">
+    <div className="shadow-2xl w-3/5 text-white">
       <h1>Getting Started</h1>
       <h2>This page is an overview of the Doki Template and related resources</h2><br />
       <p>When a developer starts an application they want it to look good, but it takes

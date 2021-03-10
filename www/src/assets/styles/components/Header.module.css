@@ -8,8 +8,9 @@ body {
 }
 
 nav {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
+
 nav > ul {
   display: flex;
   justify-content: center;
@@ -22,13 +23,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: #1c4781;
+  font-size: 18px;
 
-}
-
-.title {
-  color: white;
-  margin-top: 8rem;
-  text-align: center;
-  font-size: 40px;
 }
