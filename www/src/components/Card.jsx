@@ -51,25 +51,25 @@ const Card = () => {
       {
         templates.map((item) =>
           <a href={`#miModal-${item.id}`} key={item.id}>
-            <div className="card h-3/4 shadow-2xl bg-indigo-200 rounded mx-4 m-20 relative">
+            <div className="card h-3/4 shadow-2xl rounded mx-4 m-20 relative">
               <img src={item.img} alt="" className="imgTemplate" />
               <h1 className="mt-8">{item.name}</h1>
               <p className="absolute inset-x-0 mb-4">{item.owner}</p>
               <div className="bottom-text">
                 <p className="mt-16">{item.description}</p>
                 <div class="btn">
-                  <button class="buttonDownload bg-indigo-300 w-2/5 h-9 mt-8 rounded-md">Download</button>
+                  <button class="buttonDownload w-2/5 h-9 mt-8 rounded-md">Download</button>
                 </div>
               </div>
 
               <div id={`miModal-${item.id}`} className="modal bg-red-400  top-0 right-0 bottom-0 left-0">
 
-                <div className="modal-contenido bg-indigo-200 w-48 p-4 m-4 relative">
+                <div className="modal-contenido w-48 p-4 m-4 relative">
                   <a href="#" className="float-right">X</a>
                   <h1 className="nameTemplate pb-4">{item.name}</h1>
                   <p>If you want to download this template copy and paste the command in your terminal.</p>
                   <textarea className="command bg-gray-50 mt-11 w-11/12 p-2 text-center h-12 rounded-md" ref={textInput} type="text">{`npx create-snowpack-app page-example --template @doki-template/${item.packageName}`}</textarea> <br />
-                  <button class="buttonCopy bg-indigo-300 w-1/6 h-9 mt-8 rounded-md" onClick={copyToClipboard}>
+                  <button class="buttonCopy w-1/6 h-9 mt-8" onClick={copyToClipboard}>
                     Copy
                   </button>
                   {copySuccess}
