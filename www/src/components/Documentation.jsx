@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../assets/styles/components/Documentation.module.css'
 
 
 const Documentation = () => {
