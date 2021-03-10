@@ -4,7 +4,7 @@ import styles from '../assets/styles/components/Documentation.module.css'
 
 const Documentation = () => {
   return (
-    <div className="shadow-2xl w-3/5 text-white">
+    <div className="documentation shadow-2xl w-3/5">
       <h1>Getting Started</h1>
       <h2>This page is an overview of the Doki Template and related resources</h2><br />
       <p>When a developer starts an application they want it to look good, but it takes
@@ -25,6 +25,7 @@ const Documentation = () => {
         packages is extremely useful in our project. That way we avoid each other create many repositories.</p><br />
       <h1>npm</h1>
       <p>We are using npm as organization download the templates and that way the users could get only the template necessary. That is possible thankful to Lerna and Git.</p><br />
+
     </div >
   );
 };

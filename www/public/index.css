@@ -36,6 +36,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
 }
+
+.page--register {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
 /* CARD */
 
 .card{
@@ -125,32 +132,44 @@ body {
   pointer-events: auto;
 }
 
+/* FORMS */
+
 .text-form {
   font-size: x-large;
+  color: #1c4781;
 }
 
 .form {
-  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
   margin: 0 auto;
+  color: #1c4781;
 }
 
 .form input {
+  opacity: 0.75;
   border-radius: .5rem;
   padding-left: 1.5rem;
   height: 45px;
+  background-color: #ecf4fe;
 }
 
 .button-form {
   margin: 0 auto;
 }
 
+.actions a{
+  color:#1c4781;
+}
+
+
+/* DOCUMENTATIOON */
 .documentation {
-  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
   margin: 0 auto;
   margin-top: 8%;
   padding: 5%;
   text-align: justify;
   font-size: 17px;
+  opacity: 0.5;
+  color: black;
 }
 
 .documentation h1 {
@@ -163,6 +182,11 @@ body {
 
 .documentation p {
   font-size: 16px;
+}
+
+/* LOGIN */
+.loginInput {
+  color: #1c4781
 }
 
 /* HOMEEE */
