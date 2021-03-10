@@ -7,6 +7,7 @@ import Register from "../src/components/Register";
 import Documentation from "../src/components/Documentation";
 import Tutorial from '../src/components/Tutorial'
 import StorageFirebase from "../src/components/StorageFirebase";
+import Home from "../src/components/Home";
 
 function App() {
   // Return the App component.
@@ -20,7 +21,9 @@ function App() {
           <Route path="/tutorial" component={Tutorial} />
           <Route path="/register" exact component={Register} />
           <Route path="/new-template" exact component={StorageFirebase} />
-          <Route exact path="/" component={Card} />
+          <Route exact path="/templates" component={Card} />
+          <Route exact path="/" component={Home} />
+
         </Switch>
       </div>
     </BrowserRouter>
