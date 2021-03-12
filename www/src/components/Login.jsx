@@ -25,7 +25,7 @@ const Login = () => {
   };
   return (
     <div className="loginInput m-24">
-      <h1 className="text-form text-center text-indigo-100 pb-8">Login your account</h1>
+      <h1 className="text-form text-center pb-8">Login your account</h1>
 
       <form onSubmit={handleSubmit(sendUser)} className="form h-full grid gap-1 w-2/5 shadow-2xl p-8 text-center">
         <input
@@ -43,7 +43,7 @@ const Login = () => {
           className="mb-8"
         />
         <button className="button-form bg-indigo-100 w-24 rounded mt-8 h-8">Submit</button>
-        <div id="register" className="mt-8 text-white">
+        <div id="register" className="actions mt-8 text-white">
           <Link to="/register">Create account</Link><br />
           <a href="/">Forgot Password?</a>
         </div>

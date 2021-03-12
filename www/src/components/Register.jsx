@@ -34,12 +34,12 @@ const Register = () => {
 
   return (
     <div className="registerInput" className="m-32">
-      <h2 className="text-form text-center text-indigo-100 pb-8">
+      <h2 className="text-registre text-form text-center text-indigo-100 pb-8">
         Create your account
       </h2>
       <form
         onSubmit={handleSubmit(saveUser)}
-        className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-96 text-center"
+        className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center"
       >
         <div
           className={`${isBoxVisible ? "" : "hidden"

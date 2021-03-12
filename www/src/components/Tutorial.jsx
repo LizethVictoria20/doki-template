@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tutorial = () => {
   return (
-    <div className="documentation shadow-2xl w-3/5 text-white">
+    <div className="documentation shadow-2xl w-3/5 bg-white">
       <h1>Run a template</h1>
       <p>Installing the templates that you want to view is pretty simple!
       We created a command that you could found in the information of each template.

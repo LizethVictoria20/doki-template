@@ -1,0 +1,12 @@
+@import 'tailwindcss/dist/base.css';
+@import 'tailwindcss/dist/components.css';
+@import 'tailwindcss/dist/utilities.css';
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./6191-ai.png');
+    background-repeat: no-repeat;  
+    
+}

@@ -1,8 +1,48 @@
 /* Add CSS styles here! */
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  
 }
+.page--home {
+  background-image: url('./imgHome.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page--templates {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page--documentation {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page--tutorial {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page--login {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.page--new-template {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.page--register {
+  background-image: url('./pages.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
 /* CARD */
 
 .card{
@@ -11,6 +51,8 @@ body {
   background: #c7d2fd;
   transition: 0.4s;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  background-color: #ecf4fe;
+  color: #1c4781;
 }
 .card:hover{
   height: 470px;
@@ -48,7 +90,7 @@ body {
 .card .bottom-text{
   padding: 0 20px 10px 20px;
   margin-top: 5px;
-  background: #c7d2fd;
+  background-color: #ecf4fe;
   opacity: 0;
   visibility: hidden;
   transition: 0.1s;
@@ -57,18 +99,28 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+
 .card .bottom-text .text{
   text-align: justify;
 }
+
+.buttonDownload {
+  background-color: #1c4781;
+  color: white;
+  border-radius: 0.5rem;
+}
+
 /*  MODAAAAL */
 
 .modal-contenido{
-  background-color: #c7d2fd;
   width:50%;
   height: 50%;
   padding: 10px 20px;
   margin: 15% auto;
   position: relative;
+  background-color: #ecf4fe;
+  color: #1c4781;
 }
 
 .modal{
@@ -83,6 +135,12 @@ body {
   z-index: 99;
 }
 
+.buttonCopy {
+  background-color: #1c4781;
+  color: white;
+  border-radius: 0.5rem;
+}
+
 .nameTemplate {
   font-size: 30px;
 }
@@ -92,32 +150,44 @@ body {
   pointer-events: auto;
 }
 
+/* FORMS */
+
 .text-form {
   font-size: x-large;
+  color: #1c4781;
 }
 
 .form {
-  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
   margin: 0 auto;
+  color: #1c4781;
 }
 
 .form input {
+  opacity: 0.75;
   border-radius: .5rem;
   padding-left: 1.5rem;
   height: 45px;
+  background-color: #ecf4fe;
 }
 
 .button-form {
   margin: 0 auto;
 }
 
+.actions a{
+  color:#1c4781;
+}
+
+
+/* DOCUMENTATIOON */
 .documentation {
-  background-image: linear-gradient(to right top, #2a1538, #231639, #1c173a, #13173b, #06183b);
   margin: 0 auto;
   margin-top: 8%;
   padding: 5%;
   text-align: justify;
   font-size: 17px;
+  opacity: 0.5;
+  color: black;
 }
 
 .documentation h1 {
@@ -130,4 +200,34 @@ body {
 
 .documentation p {
   font-size: 16px;
+}
+
+/* LOGIN */
+.loginInput {
+  color: #1c4781
+}
+
+/* HOMEEE */
+.containerHome {
+  text-indent: 14rem;
+  top: 12rem;
+  position: relative;
+  color: #1c4781;
+}
+
+.containerHome h1 {
+  font-size: 45px;
+}
+
+.containerHome p {
+margin-bottom: 2rem;
+}
+
+.containerHome a {
+  background-color: #1c4781;
+  color: white;
+  margin-left: 14rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+
 }
