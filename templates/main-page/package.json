@@ -1,5 +1,5 @@
 {
-  "name": "main-page",
+  "name": "@doki-template/main-page",
   "version": "0.0.2",
   "scripts": {
     "start": "snowpack dev",
