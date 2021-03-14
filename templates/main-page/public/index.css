@@ -1,4 +1,41 @@
 /* Add CSS styles here! */
 body {
-  font-family: sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  background-image: url('./background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-right: 9rem;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #1c4781;
+  font-size: 18px;
+}
+
+/* HOMEEE */
+.containerHome {
+  text-indent: 14rem;
+  top: 12rem;
+  position: relative;
+  color: #1c4781;
+}
+
+.containerHome h1 {
+  font-size: 45px;
 }
