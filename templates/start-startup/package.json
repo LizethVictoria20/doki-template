@@ -1,4 +1,6 @@
 {
+  "name": "@doki-template/start-startup",
+  "version": "0.0.1",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -6,5 +8,15 @@
   },
   "devDependencies": {
     "snowpack": "^3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "csa-template"
+  ],
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
