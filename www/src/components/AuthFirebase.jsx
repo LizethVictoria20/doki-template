@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { login, sigout, userState } from '../config/base';
+import { loginGithub, loginGoogle, sigout, userState } from '../config/base';
 import { app } from '../config/base'
 import firebase from 'firebase'
 
@@ -9,7 +9,7 @@ export const AuthFirebase = () => {
     const [method, setMethod] = useState('')
 
 
-    const handledMehod = (e) => {
+    const handledMethod = (e) => {
         setMethod(e.target.name)
     }
 
@@ -69,13 +69,23 @@ export const AuthFirebase = () => {
         userState((user) => setUser(user))
     }, [])
 
-    function handledClick(e) {
+    function handledClickGithub(e) {
         e.preventDefault();
-        login().then((username) => {
+        loginGithub().then((username) => {
             setUser(username)
         })
     }
-
+    function handledClickGoogle(e) {
+        e.preventDefault()
+        loginGoogle().then((result) => {
+            const credential = result.credential;
+            const token = credential.accessToken;
+            const user = result.user
+            setUser(user)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }
     function out(e) {
         e.preventDefault();
         sigout().then(()=>{
@@ -88,8 +98,10 @@ export const AuthFirebase = () => {
         <>
             {method.length == 0 ? 
             <form id="recaptcha-container" className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center">
-                <button onClick={handledMehod} name='methodPhone'>Login with Phone</button>
-                <button onClick={handledMehod} name='methodGithub'>Login with Github</button>
+                <button onClick={handledMethod} name='methodPhone'>Login with Phone</button>
+                <button onClick={handledMethod} name='methodGithub'>Login with Github</button>
+                <button onClick={handledMethod} name='methodGoogle'>Login with Google</button>
+
             </form>
             : method === 'methodPhone' ?
                 <form onSubmit={onSignInSubmit} className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center">
@@ -98,15 +110,20 @@ export const AuthFirebase = () => {
                     <button type="submit" >Log In</button>
                     <div id="recaptcha-container"></div>
                 </form>
-            : !user ? 
+            : method === 'methodGithub'?  !user ? 
             <form id="recaptcha-container" className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center">
-                <button type="submit" onClick={handledClick}>Login with Github</button> 
+                <button type="submit" onClick={handledClickGithub}>Login with Github</button> 
             </form>:
             <form id="recaptcha-container" className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center">
                 <button type="submit" onClick={out}>Sign Out</button>
             </form>
-
-            
+            : !user ?
+            <form id="recaptcha-container" className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center">
+                <button type="submit" onClick={handledClickGoogle}>Login with Google</button> 
+            </form>:
+            <form id="recaptcha-container" className="form h-64 grid gap-1 w-2/5 shadow-2xl p-8 h-2/4 text-center">
+                <button type="submit" onClick={out}>Sign Out</button>
+            </form>
             }
 
         </>
