@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import '../../public/index.css'
 import { app } from '../config/base';
 
 const db = app.firestore()

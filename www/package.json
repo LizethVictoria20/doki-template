@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "rm -rf /build && snowpack build && firebase deploy --only hosting",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
