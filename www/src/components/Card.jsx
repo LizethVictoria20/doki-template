@@ -10,41 +10,41 @@ const CardModal = ({
   copyMessage,
   copyToClipboard,
 }) => (
-  <>
-    {showModal === item.id && (
-      <div className="modal">
-        <div className="modal-contenido">
-          <button onClick={onClose} className="float-right">
-            X
+    <>
+      {showModal === item.id && (
+        <div className="modal">
+          <div className="modal-contenido">
+            <button onClick={onClose} className="float-right">
+              X
           </button>
-          <h1 className="nameTemplate pb-4">{item.name}</h1>
-          <p>
-            If you want to download this template copy and paste the command in
-            your terminal.
+            <h1 className="nameTemplate pb-4">{item.name}</h1>
+            <p>
+              If you want to download this template copy and paste the command in
+              your terminal.
           </p>
-          <p className="command bg-gray-50 mt-11 w-11/12 p-2 text-center h-12 rounded-md">
-            {`npx create-snowpack-app page-example --template @doki-template/
+            <p className="command bg-gray-50 mt-11 w-11/12 p-2 text-center h-12 rounded-md ml-8">
+              {`npx create-snowpack-app page-example --template @doki-template/
           ${item.packageName}`}
-          </p>
-          <br />
-          <button
-            className="buttonCopy w-1/6 h-9 mt-8"
-            onClick={(e) =>
-              copyToClipboard(
-                e,
-                `npx create-snowpack-app page-example --template @doki-template/
+            </p>
+            <br />
+            <button
+              className="buttonCopy w-1/6 h-9 mt-8"
+              onClick={(e) =>
+                copyToClipboard(
+                  e,
+                  `npx create-snowpack-app page-example --template @doki-template/
             ${item.packageName}`
-              )
-            }
-          >
-            Copy
+                )
+              }
+            >
+              Copy
           </button>
-          {copyMessage}
+            {copyMessage}
+          </div>
         </div>
-      </div>
-    )}
-  </>
-);
+      )}
+    </>
+  );
 
 const Card = () => {
   const [templates, setTemplates] = useState([]);
@@ -97,7 +97,8 @@ const Card = () => {
           >
             <img src={template.img} alt="" className="imgTemplate" />
             <h1 className="mt-8">{template.name}</h1>
-            <p className="absolute inset-x-0 mb-4">{template.owner}</p>
+            <p className="absolute inset-x-0 mb-4">{template.owner}</p><br />
+            <button className="buttonDownload">Download</button>
           </article>
           <CardModal
             showModal={showModalByID}
