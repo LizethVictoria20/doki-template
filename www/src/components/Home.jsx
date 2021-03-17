@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div className="containerHome">
         <h1>Doki Template</h1>
-        <p>Make simple</p>
+        <p>Make it simple</p>
         <Link to="/templates">See templates</Link>
       </div>
     </>
