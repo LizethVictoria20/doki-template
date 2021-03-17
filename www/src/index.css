@@ -45,7 +45,6 @@ body {
 /* CARD */
 
 .card{
-  height: 350px;
   max-width: 350px;
   background: #c7d2fd;
   transition: 0.4s;
@@ -53,10 +52,13 @@ body {
   background-color: #ecf4fe;
   color: #1c4781;
 }
-.card:hover{
-  height: 470px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+.card:hover {
+  box-shadow: 2px 8px 6px 6px rgba(36, 1, 41, 0.2);
+
+
 }
+
 
 .imgTemplate {
   height: 223px;
@@ -110,6 +112,16 @@ body {
   border-radius: 0.5rem;
 }
 
+.buttonDownload {
+  background-color: #1c4781;
+  color: white;
+  padding: 0.45rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  pointer-events: auto;
+  width: 30%;
+}
+
 /*  MODAAAAL */
 
 .modal-contenido{
@@ -120,7 +132,7 @@ body {
   position: relative;
   background-color: #ecf4fe;
   color: #1c4781;
-  max-height: 350px;
+  max-height: 100%;
 }
 
 .modal{
