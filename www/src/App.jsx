@@ -8,6 +8,7 @@ import Documentation from "../src/components/Documentation";
 import Tutorial from '../src/components/Tutorial'
 import StorageFirebase from "../src/components/StorageFirebase";
 import Home from "../src/components/Home";
+import { AuthFirebase } from "./components/AuthFirebase";
 
 
 // Heads-up:
@@ -34,7 +35,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/documentation" component={Documentation} />
           <Route path="/tutorial" component={Tutorial} />
-          <Route path="/register" exact component={Register} />
+          <Route path="/register" exact component={AuthFirebase} />
           <Route path="/new-template" exact component={StorageFirebase} />
           <Route exact path="/templates" component={Card} />
           <Route exact path="/" component={Home} />

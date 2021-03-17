@@ -14,7 +14,7 @@ export const app = firebase.initializeApp({
   measurementId: "G-823CPHWF40"
 });
 
-const auth = app.auth()
+export const auth = app.auth()
 
 const userFirebase = (user) => {
   if (user) {
