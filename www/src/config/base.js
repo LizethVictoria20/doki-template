@@ -14,7 +14,7 @@ export const app = firebase.initializeApp({
   measurementId: "G-823CPHWF40"
 });
 
-const auth = app.auth()
+export const auth = app.auth()
 
 const userFirebase = (user) => {
   if (user) {
@@ -34,11 +34,29 @@ export const userState = (onChange) =>{
   })
 }
 
-export const login = () => {
+/**
+ * loginGithub : Authenticates an user by Github
+ * @returns {promise}: If succeeds, returns the signed in user. If sign in was unsuccessful, returns an error object
+ */
+export const loginGithub = () => {
   const githubProvider = new firebase.auth.GithubAuthProvider()
   return auth.signInWithPopup(githubProvider)
 }
 
+/**
+ * loginGoogle: Authenticates an user by Google
+ * @returns {promise}: If succeeds, returns the signed in user. If sign in was unsuccessful, returns an error object
+ */
+export const loginGoogle = () => {
+  const googleProvider = new firebase.auth.GoogleAuthProvider()
+  return auth.signInWithPopup(googleProvider)
+
+}
+
+/**
+ * sigout: Signs out the current user.
+ * @returns {promise}
+ */
 export const sigout = () => {
   return auth.signOut()
 }
