@@ -33,7 +33,7 @@ const CardModal = ({
                 copyToClipboard(
                   e,
                   `npx create-snowpack-app page-example --template @doki-template/
-            ${item.packageName}`
+                  ${item.packageName.trim()}`
                 )
               }
             >
