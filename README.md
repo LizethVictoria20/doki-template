@@ -8,10 +8,10 @@ Other features: people who wish to upload their template can do so by simply reg
 
 ## The Team
 
-- Lizeth Victoria Franco ([@LizVictoriaF](https://www.linkedin.com/in/lizethvictoria/ "lizethvictoria")) - Frontend Developer
-- José Giraldo Ortega ([@JosGiraldoOrte1](https://www.linkedin.com/in/jose-giraldo-ortega-5142021a1/ "jose-giraldo-ortega-5142021a1/")) - Backend Developer
-- Daniel Villaba ([@d4ni31_](https://www.linkedin.com/in/wdanielvp/ "wdanielvp")) - Backend Developer
-- Abdel Mejia ([@SoyBhalut](https://www.linkedin.com/in/bhalut/ "bhalut")) - Frontend Developer
+- Lizeth Victoria Franco ([lizethvictoria](https://www.linkedin.com/in/lizethvictoria/ "lizethvictoria")) - Frontend Developer
+- José Giraldo Ortega ([jose-giraldo-ortega-5142021a1](https://www.linkedin.com/in/jose-giraldo-ortega-5142021a1/ "jose-giraldo-ortega-5142021a1/")) - Backend Developer
+- Daniel Villaba ([wdanielvp](https://www.linkedin.com/in/wdanielvp/ "wdanielvp")) - Backend Developer
+- Abdel Mejia ([bhalut](https://www.linkedin.com/in/bhalut/ "bhalut")) - Frontend Developer
 
 ## Blog posts
 PENDIENTE
