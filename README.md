@@ -1,17 +1,17 @@
 # Doki Template
-
+[![](https://github.com/LizethVictoria20/doki-template/blob/master/www/public/doki-template.png?raw=true)](https://github.com/LizethVictoria20/doki-template/blob/master/www/public/doki-template.png?raw=true)
 ## Introduction
 ### The project
 When a developer starts an application they want it to look good, but it takes some time to do this. We created Doki Template, we want to save time for developers avoiding concentrating on styles so that it focuses only on functionality, that is the goal of doki.
 
-Other features: people who wish to upload their template can do so by simply registering on our page.
+Other features: people who wish to upload their template can do so by simply registering on [our page](https://doki-templates.web.app "our page").
 
 ## The Team
 
-- Lizeth Victoria Franco ([@LizVictoriaF](https://twitter.com/LizVictoriaF "@LizVictoriaF")) - Frontend Developer
-- José Giraldo Ortega ([@JosGiraldoOrte1](https://twitter.com/JosGiraldoOrte1 "@JosGiraldoOrte1")) - Backend Developer
-- Daniel Villaba ([@d4ni31_](https://twitter.com/d4ni31_ "@d4ni31_")) - Backend Developer
-- Abdel Mejia ([@SoyBhalut](https://twitter.com/SoyBhalut "SoyBhalut")) - Frontend Developer
+- Lizeth Victoria Franco ([@LizVictoriaF](https://www.linkedin.com/in/lizethvictoria/ "lizethvictoria")) - Frontend Developer
+- José Giraldo Ortega ([@JosGiraldoOrte1](https://www.linkedin.com/in/jose-giraldo-ortega-5142021a1/ "jose-giraldo-ortega-5142021a1/")) - Backend Developer
+- Daniel Villaba ([@d4ni31_](https://www.linkedin.com/in/wdanielvp/ "wdanielvp")) - Backend Developer
+- Abdel Mejia ([@SoyBhalut](https://www.linkedin.com/in/bhalut/ "bhalut")) - Frontend Developer
 
 ## Blog posts
 PENDIENTE
