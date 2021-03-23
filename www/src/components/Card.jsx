@@ -52,6 +52,7 @@ const Card = () => {
   const [copyMessage, setCopyMessage] = useState(null);
 
   const copyToClipboard = (btnEvent, textToCopy) => {
+    //Function to copy the command
     btnEvent.preventDefault();
     try {
       navigator.clipboard.writeText(textToCopy);
@@ -65,6 +66,7 @@ const Card = () => {
 
   useEffect(() => {
     const fetchTemplates = async () => {
+      //Function to get all the information from the API
       const templatescol = await db.collection("templates").get();
       setTemplates(
         templatescol.docs.map((document) => {
@@ -73,18 +75,6 @@ const Card = () => {
       );
     };
     fetchTemplates();
-    // fetch('https://doki-templates-default-rtdb.firebaseio.com/templates.json')
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     console.log(data)
-    //     const templateArray = []
-    //     for (const prop in data) {
-    //       const item = data[prop]
-    //       item.id = prop
-    //       templateArray.push(item)
-    //     }
-    //     setTemplates(templateArray)
-    //   })
   }, []);
 
   return (

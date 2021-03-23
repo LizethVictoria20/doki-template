@@ -4,6 +4,7 @@ import { app } from '../config/base';
 const db = app.firestore()
 
 const StorageFirebase = () => {
+    //Function to send information about the templates by form 
     const [fileUrl, setFileUrl] = useState(null)
 
     const onFileChange = async (e) => {

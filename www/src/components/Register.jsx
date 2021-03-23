@@ -4,6 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
+  //Function to manage parameters of the registre form 
   name: yup.string().max(20, "Hey its too large").required(),
   lastName: yup.string().required(),
   email: yup.string().email().required(),

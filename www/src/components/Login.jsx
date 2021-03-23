@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
+  //Function to manage parameters of the login form 
   email: yup.string().email().required(),
   password: yup
     .string()
