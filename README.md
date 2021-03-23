@@ -6,7 +6,7 @@ When a developer starts an application they want it to look good, but it takes s
 
 Other features: people who wish to upload their template can do so by simply registering on [our page](https://doki-templates.web.app "our page").
 
-## The Team 
+## The Team 🎖
 
 - Lizeth Victoria Franco ([lizethvictoria](https://www.linkedin.com/in/lizethvictoria/ "lizethvictoria")) - Frontend Developer
 - José Giraldo Ortega ([jose-giraldo-ortega-5142021a1](https://www.linkedin.com/in/jose-giraldo-ortega-5142021a1/ "jose-giraldo-ortega-5142021a1/")) - Backend Developer
@@ -38,7 +38,7 @@ When you are finished simply go back to your terminal and hit ctrl + c to quit t
 
 ## Architecture ⚙️
 [![](https://github.com/LizethVictoria20/doki-template/blob/dev-liz/www/public/infrastructure.png?raw=true)](http:/https://github.com/LizethVictoria20/doki-template/blob/dev-liz/www/public/Architecture.png?raw=true/)
-## Snowpack
+## Snowpack 🗾
 [Snowpack](https://www.snowpack.dev "Snowpack") is a lightning-fast frontend build tool, designed for the modern web. It is an alternative to heavier, more complex bundlers like webpack or Parcel in your development workflow. Snowpack leverages JavaScript's native module system (known as ESM) to avoid unnecessary work and stay fast no matter how big your project grows.
 
 Our application is done with React with help of Snowpack. Unlike traditional React application tooling, Snowpack saves you from getting bogged down with complex bundler setups and configuration files.
